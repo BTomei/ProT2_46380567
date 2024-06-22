@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The GOAT</title>
+    <link rel="icon" href="assets/icons/messi.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .parrafos{
+           color: #333333;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/miestilo.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity=" " crossorigin=" ">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="assets/icons/messi.png" alt="Logo" class="logo">
+      </div>
+      <div class="title-container">
+          <h1>The Greatest of all Time</h1>
+      </div>
+      </header>
+
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+         
+              <ul class="navbar-nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link me-3" href="principal.html"  >Home</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3" href="login.html"  >Ingreso</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link me-3 " href="QuienesSomos.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3" href="AcercaDe.html">Acerca de</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+  </nav>
+      </nav>
+
+<div class="container mt-2 mb-5 d-flex justify-content-center">
+    <div class="card" style="width: 50%;">
+      <div class="card-header text-center">
+        <h2>Registrarse</h2>
+      </div>
+      <div class="card-body">
+        <form method="post" action="/enviar-form">
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input name="nombre" type="text" class="form-control" placeholder="ingresa tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Apellido</label>
+            <input type="text" name="apellido" class="form-control" placeholder="apellido">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" placeholder="correo@algo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+            <input type="text" name="usuario" class="form-control" placeholder="usuario">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input name="pass" type="password" class="form-control" placeholder="password">
+          </div>
+          <button type="submit" class="btn btn-success">Guardar</button>
+          <a href="/registro" class="btn btn-danger">Cancelar</a>
+          <button type="reset" class="btn btn-secondary">Borrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    
+    <p class="derechosautor">&copy; 2024 The GOAT. Todos los derechos reservados.</p>
+    <script src="assets/js/bootstrap.bundle.min.js" integrity=" " crossorigin=" "></script>
+</footer>
+
+</body>
+</html>

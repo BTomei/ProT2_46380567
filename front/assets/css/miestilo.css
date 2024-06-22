@@ -1,0 +1,168 @@
+body{
+    background-color: #e5e6c9;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    background-color: #8BA6AC;
+    color: #d7d7b8;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .logo-container,
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container {
+    order: 1;
+  }
+  
+  .title-container {
+    order: 2;
+  }
+  
+  .logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: clamp(24px, 5vw, 32px);
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+   .logo-container,
+   .title-container {
+      width: 100%;
+      justify-content: center;
+    }
+  
+   .logo {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+
+nav{
+    background-color: #BDCDD0;
+    padding: 7.5px;
+    }
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+    nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    }
+    nav ul li a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    }
+    nav ul li a:hover {
+    background-color: #8BA6AC;
+    }
+
+section {
+    padding: 20px; 
+    
+}
+
+    
+footer {
+    background-color: #8ba6ac;
+    color: #d7d7b8;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.derechosautor {
+    text-align: center;
+}
+
+
+.centrado-negrita-cursiva{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+} 
+.parrafos{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 25px;
+    .p2{
+        text-indent: 20px;
+    }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.img1{
+    width: 450px; 
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #333333;
+}
+
+
+/*Segunda entrega*/
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mi-tarjeta {
+    background-color: #292f36;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.mi-tarjeta:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
