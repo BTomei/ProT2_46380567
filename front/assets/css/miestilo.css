@@ -1,11 +1,15 @@
-body{
+body {
     background-color: #e5e6c9;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+#content {
+    flex: 1;
+}
 
 header {
     display: flex;
@@ -17,6 +21,7 @@ header {
     color: #d7d7b8;
     padding: 20px;
     box-sizing: border-box;
+    height: auto;
   }
   
   .logo-container,
@@ -164,5 +169,13 @@ img {
 
 .mi-tarjeta:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.nav-link {
+  font-size: 20px; 
+  padding: 15px 25px; 
+}
+.nav-link.active {
+  font-weight: bold; 
 }
 

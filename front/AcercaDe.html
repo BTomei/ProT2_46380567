@@ -54,49 +54,86 @@
         </div>
 </nav>
     </nav>
+    <main id="content">
 <section>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Deja tu Comentario!</h3>
-                        <p>Este proyecto está en pleno desarrollo y tu opinión es muy importante para nosotros. Te invitamos a dejar tus comentarios y sugerencias en este apartado. ¡Gracias por tu apoyo y por ayudarnos a mejorar!</p>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario (opcional)">
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="true">Nuestra Misión</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="services-tab" data-bs-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Lo que Ofrecemos</a>
+            </li>
+            
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="feedback-tab" data-bs-toggle="tab" href="#feedback" role="tab" aria-controls="feedback" aria-selected="false">Sugerencias</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                <h4>Nuestra Misión</h4>
+                <p>El objetivo de este proyecto es celebrar y difundir la increíble trayectoria de Lionel Messi. A través de esta página web, buscamos proporcionar a los fans de todo el mundo una fuente de información completa y actualizada sobre su carrera, sus logros y su impacto en el fútbol mundial. Queremos conectar con otros admiradores de Messi, compartiendo nuestra pasión y admiración por este ícono del deporte.</p>
+                
+            </div>
+
+            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                <h4>Lo que Ofrecemos</h4>
+             <p>En esta página web, planeamos ofrecer una variedad de contenidos y recursos dedicados a Lionel Messi:</p>
+            <ul>
+            <li>
+                 <strong>Biografía Completa:</strong> Detalles sobre la vida y carrera de Messi, desde sus inicios hasta su estatus actual como uno de los mejores futbolistas de todos los tiempos.
+            </li>
+            <li>
+                <strong>Estadísticas y Logros:</strong> Información detallada sobre sus récords, estadísticas de partidos y logros a lo largo de su carrera.
+            </li>
+            <li>
+                <strong>Galería de Imágenes y Videos:</strong> Una colección de momentos icónicos en la carrera de Messi, incluyendo fotos y videos destacados.
+             </li>
+            <li>
+                <strong>Noticias y Actualizaciones:</strong> Las últimas noticias y actualizaciones sobre Messi, incluyendo transferencias, entrevistas y más.
+            </li>
+            <li>
+                <strong>Interacción con Fans:</strong> Espacios para que los fans compartan sus pensamientos, recuerdos y mensajes para Messi.
+            </li>
+            </ul>
+            <p>Nota: Actualmente, estamos en pleno desarrollo de estos contenidos. ¡Gracias por tu paciencia y apoyo!</p>
+            </div>
+
+            <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+                <h4>Sugerencias</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Deja tu Comentario!</h3>
+                                    <p>Este proyecto está en pleno desarrollo y tu opinión es muy importante para nosotros. Te invitamos a dejar tus comentarios y sugerencias en este apartado. ¡Gracias por tu apoyo y por ayudarnos a mejorar!</p>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="username" class="form-label">Nombre de Usuario</label>
+                                            <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario (opcional)">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="comment" class="form-label">Comentario</label>
+                                            <textarea class="form-control" id="comment" rows="3" placeholder="Deje su sugerencia o comentario aquí"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="comment" class="form-label">Comentario</label>
-                                <textarea class="form-control" id="comment" rows="3" placeholder="Deje su sugerencia o comentario aquí"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+    
 </section>
-   
+|   </main>
     <footer>
         
         <p class="derechosautor">&copy; 2024 The GOAT. Todos los derechos reservados.</p>
